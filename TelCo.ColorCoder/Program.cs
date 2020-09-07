@@ -21,18 +21,21 @@ namespace TelCo.ColorCoder
         /// Array of minor colors
         /// </summary>
         private static Color[] colorMapMinor;
-        /// <summary>
-        /// data type defined to hold the two colors of clor pair
-        /// </summary>
-        internal class ColorPair
+        
+/// <summary>
+///  Given the inbuilt colors and pair number the function return the mapping
+    /// </summary> 
+
+        public override string  ToString ()
+    {
+        string colorPairMapping= " ";
+        for (int pairNumber=1;pairNumber<=25; pairNumber++)
         {
-            internal Color majorColor;
-            internal Color minorColor;
-            public override string ToString()
-            {
-                return string.Format("MajorColor:{0}, MinorColor:{1}", majorColor.Name, minorColor.Name);
-            }
+            ColorPair colorPair= GetColorFromPairNumber(pairNumber);
+            colorPairMapping += pairNumber + "\t" + colorPair + "\n"; 
         }
+        return colorPairMapping;
+    }
         /// <summary>
         /// Static constructor required to initialize static variable
         /// </summary>
@@ -142,6 +145,7 @@ namespace TelCo.ColorCoder
             pairNumber = Program.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}", testPair2, pairNumber);
             Debug.Assert(pairNumber == 6);
-        }
+        } 
+        
     }
 }
