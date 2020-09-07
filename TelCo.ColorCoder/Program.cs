@@ -31,7 +31,7 @@ namespace TelCo.ColorCoder
         string colorPairMapping= " ";
         for (int pairNumber=1;pairNumber<=25; pairNumber++)
         {
-            ColorPair colorPair= GetNumberAndColorPair.GetColorFromPairNumber(pairNumber);
+            ColorPair colorPair= GetColorPair.GetColorFromPairNumber(pairNumber);
             colorPairMapping += pairNumber + "\t" + colorPair + "\n"; 
         }
         return colorPairMapping;
