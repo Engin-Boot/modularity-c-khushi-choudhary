@@ -22,8 +22,8 @@ namespace TelCo.ColorCoder
         /// </summary>
         internal static Color[] colorMapMinor;
         
-/// <summary>
-///  Given the inbuilt colors and pair number the function return the mapping
+    /// <summary>
+     ///  Given the inbuilt colors and pair number the function return the mapping
     /// </summary> 
 
         public override string  ToString ()
@@ -37,7 +37,7 @@ namespace TelCo.ColorCoder
         return colorPairMapping;
     }
         /// <summary>
-        /// Static constructor required to initialize static variable
+         /// Static constructor required to initialize static variable
         /// </summary>
         static Program()
         {
