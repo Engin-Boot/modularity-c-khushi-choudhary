@@ -23,7 +23,7 @@ namespace TelCo.ColorCoder
         internal static Color[] colorMapMinor;
         
     /// <summary>
-     ///  Given the inbuilt colors and pair number the function return the mapping using TOString method.
+     ///  Given the inbuilt colors and pair number the function return the mapping using TOString method implimentation.
     /// </summary> 
 
         public override string  ToString ()
