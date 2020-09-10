@@ -27,7 +27,7 @@ namespace TelCo.ColorCoder
     /// </summary> 
 
         public override string  ToString ()
-    {
+       {
         string colorPairMapping= " ";
         for (int pairNumber=1;pairNumber<=25; pairNumber++)
         {
